@@ -13,8 +13,13 @@ public class Negyzet {
         this.k1 = k1;
     }
 
-    public String Kiiratas() {
-        return "X kordináta: " + k1.getX() + "\nY kordináta: " + k1.getY() + "\n\tA négyzet területe: " + a * a;
+    @Override
+    public String toString() {
+        return "Negyzet{" + "a=" + a + ", k1=" + k1 + '}';
     }
+
+//    public String Kiiratas() {
+//        return "X kordináta: " + k1.getX() + "\nY kordináta: " + k1.getY() + "\n\tA négyzet területe: " + a * a;
+//    }
 
 }

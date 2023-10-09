@@ -10,7 +10,7 @@ public class main {
     }
     private static void Program() {
         Negyzet n1 = new Negyzet(5, new Kordinata());
-        System.out.println(n1.Kiiratas());
+        System.out.println(n1);
     }
     
     
