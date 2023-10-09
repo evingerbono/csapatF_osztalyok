@@ -14,9 +14,25 @@ public class Negyzet {
     }
 
     @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 59 * hash + this.a;
+        return hash;
+    }
+
+    @Override
     public boolean equals(Object obj) {
-        Negyzet masik = (Negyzet) obj;
-        return this.a == masik.a;
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Negyzet other = (Negyzet) obj;
+        return this.a == other.a;
     }
 
     public boolean Osszehasonlit(Negyzet masik) {
