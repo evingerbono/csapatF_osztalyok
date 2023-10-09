@@ -12,6 +12,9 @@ public class main {
         Negyzet n1 = new Negyzet(5, new Kordinata());
         Negyzet n2 = new Negyzet(2, new Kordinata(1,10));
         System.out.println(n1.Osszehasonlit(n2));
+        
+        n2 = new Negyzet(5, new Kordinata());
+        System.out.println("n1==n2 "+n1.equals(n2));
     }
     
     

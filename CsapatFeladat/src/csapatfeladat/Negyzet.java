@@ -12,13 +12,19 @@ public class Negyzet {
         this.a = a;
         this.k1 = k1;
     }
-    
-    public boolean Osszehasonlit(Negyzet masik){
-        return a==masik.a;
+
+    @Override
+    public boolean equals(Object obj) {
+        Negyzet masik = (Negyzet) obj;
+        return this.a == masik.a;
+    }
+
+    public boolean Osszehasonlit(Negyzet masik) {
+        return a == masik.a;
     }
 
     @Override
     public String toString() {
-        return "Negyzet{" + "Területe=" + a*a + ", X=" + k1.getX() +", Y=" + k1.getY() + '}';
+        return "Negyzet{" + "Területe=" + a * a + ", X=" + k1.getX() + ", Y=" + k1.getY() + '}';
     }
 }
