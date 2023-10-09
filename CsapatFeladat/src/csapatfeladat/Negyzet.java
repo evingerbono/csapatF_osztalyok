@@ -12,14 +12,13 @@ public class Negyzet {
         this.a = a;
         this.k1 = k1;
     }
+    
+    public boolean Osszehasonlit(Negyzet masik){
+        return a==masik.a;
+    }
 
     @Override
     public String toString() {
-        return "Negyzet{" + "a=" + a + ", k1=" + k1 + '}';
+        return "Negyzet{" + "Területe=" + a*a + ", X=" + k1.getX() +", Y=" + k1.getY() + '}';
     }
-
-//    public String Kiiratas() {
-//        return "X kordináta: " + k1.getX() + "\nY kordináta: " + k1.getY() + "\n\tA négyzet területe: " + a * a;
-//    }
-
 }
