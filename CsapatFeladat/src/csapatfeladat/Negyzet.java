@@ -17,7 +17,4 @@ public class Negyzet {
         return "X kordináta: " + k1.getX() + "\nY kordináta: " + k1.getY() + "\n\tA négyzet területe: " + a * a;
     }
 
-    public void setK1(Kordinata k1) {
-        this.k1 = k1;
-    }
 }
