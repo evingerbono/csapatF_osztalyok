@@ -3,23 +3,18 @@ package csapatfeladat;
 public class Negyzet {
 
     private int a;
+    private Kordinata k1;
 
-   
-    private Kordinata kor;
-
-    public void setA(int a) {
+    public Negyzet(int a, Kordinata k1) {
         if (a <= 1) {
             a = 2;
         }
         this.a = a;
-    }
-    
-     public void setKor(Kordinata kor) {
-        this.kor = kor;
+        this.k1 = k1;
     }
 
     public String Kiiratas() {
-        return "X kordináta: " + kor.getX()+ "\nY kordináta: " + kor.getY() + "\n\tA négyzet területe: " + a * a;
+        return "X kordináta: " + k1.getX() + "\nY kordináta: " + k1.getY() + "\n\tA négyzet területe: " + a * a;
     }
 
 }

@@ -2,8 +2,12 @@ package csapatfeladat;
 
 public class Kordinata {
 
-    private int x;
-    private int y;
+    private int x, y;
+
+    public Kordinata(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
     public int getX() {
         return x;
@@ -11,14 +15,6 @@ public class Kordinata {
 
     public int getY() {
         return y;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
     }
 
 }
