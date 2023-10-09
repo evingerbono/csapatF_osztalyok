@@ -3,13 +3,10 @@ package csapatfeladat;
 public class Kordinata {
     private int x,y;
 
-    public void setX(int x) {
+    public Kordinata(int x, int y) {
         this.x = x;
-    }
-
-    public void setY(int y) {
         this.y = y;
-    }
+    }    
 
     public int getX() {
         return x;
