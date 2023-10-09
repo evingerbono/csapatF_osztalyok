@@ -9,6 +9,11 @@ public class Kordinata {
         this.y = y;
     }
 
+    public Kordinata() {
+        this.x = 0;
+        this.y = 0;
+    }
+
     public int getX() {
         return x;
     }
